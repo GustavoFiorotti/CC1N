@@ -13,10 +13,82 @@
 <h3>Link Externo:</h3>
 
 <a href="https://www.youtube.com/watch?v=vpdFip3Es0o&pp=ygUNZmxhbWVuZ28gaGlubw%3D%3D">Teste</a>
+
 <br><br>
+
 <a href="https://uvv.br/">Teste 2</a>
+
+<br>
+
+<h4>Propriedades adicionais</h4>
+<p>Com o blank abrirá uma guia externa, sem sobrepor o meu próprio site, herflang indica a lingua do site referenciado e o rel = "external" indica que o site é externo.</p>
+
+<a href="http://google.com" target="_blank" rel="external" hreflang = "pt-br">teste usando blank</a>
+
+<br>
+
+<p>Com o self vai abrir o link na mesma tela (padrão)</p>
+
+<a href="http://google.com" target="_self" rel="Externo">teste usando self</a>
+
+<br>
+
+<p>Com o top vai desfazer todos os frames e abrir o destino no navegador completo</p>
+
+<a href="http://google.com" target="_top" rel="Externo"> teste usando top</a>
+
+<br>
+
+<p>Com o parent similar ao uso do _top em uma referência à janela mãe</p>
+
+<a href="http://google.com" target="_parent" rel="Externo">teste usando parent</a>
+
+<br>
+
+<p>Link patrocinado com ref "nofollow"</p>
+
+<a href="http://google.com" target="_blank" rel="nofollow">teste usando ref "nofollow"</a>
+
+
 <h3>Link Interno:</h3>
 <a href="../Aula7/index.html">Aula 7</a>
+
+<h4>Propriedades adicionais</h4>
+
+<p>Com o self, abre na mesma janela, rel "next" indica que vai para o proximo site e rel "prev" indica que vai voltar uma pagina.</p>
+
+<a href="./Paginas/cidades.html" target="_self" rel="next">Teste site usando self e o next, next diz que vai pular para a proxima pagina.</a>
+
+<h3>Link Download</h3>
+
+<p>Se apenas colocar o href e referenciar o arquivo, o navegador pode entender que ele mesmo consiga abrir no navegador e não fará o download.</p>
+
+<a href="./Arquivos/CSW - Aula 8 - Primeiros passos com HTML e CSS - Links.pdf" target="_blank">pdf aula de hoje</a>
+
+
+<br>
+
+<p>Já no seguinte, é possível identificar que é um arquivo para baixar, usando o download = "file-name" que define o nome do arquivo e o type = "application/pdf" que define que o arquivo em questão é um pdf, por exemplo</p>
+
+<a href="./Arquivos/CSW - Aula 8 - Primeiros passos com HTML e CSS - Links.pdf" download="Aula8.pdf" type="application/pdf" >pdf aula de hoje</a>
+
+<br>
+
+<p><strong>Outros exemplos de type:</strong></p>
+<ul type="cicle">
+    <li>application/zip</li>
+    <li>text/html</li>
+    <li>text/css</li>
+    <li>text/javascript</li>
+    <li>video/mp4</li>
+    <li>video/H264</li>
+    <li>video/JPEG</li>
+    <li>audio/aac</li>
+    <li>audio/mpeg</li>
+    <li>font/ttf</li>
+    <li>image/jpeg</li>
+    <li>image/png</li>
+</ul>
 
 <h3>TESTE A VERA: Neste arquivo, referenciar uma pagina interna e uma externa, além de disponibilizar 2 arquivos para download, um .pdf e .rar</h3>
 
@@ -24,15 +96,16 @@
 
 <br>
 
-<p>Baixar o jogo Sony Spider Man 2 <a href="./Arquivos/homi das aranha 2 pc buildado 1.3.0.rar">AQUI</a>.</p>
+<p>Baixar o jogo Sony Spider Man 2 <a href="./Arquivos/homi das aranha 2 pc buildado 1.3.0.rar" target="_blank" download="Homem-Aranha-2.rar" type="application/rar">aqui</a>.</p>
 
 <br>
 
 <p>Baixar a aula de hoje <a href="./Arquivos/CSW - Aula 8 - Primeiros passos com HTML e CSS - Links.pdf">aqui</a></p>
 
-<h4>LINKS ANCORADOS</h4>
 
-<p></p>
+<h4>CIDADES</h4>
+
+
 
 </body>
 </html>
