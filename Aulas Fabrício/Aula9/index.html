@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinâmicas</title>
+    <link rel="shortcut icon" href="Imagens/imagem_pagina.png" type="image/x-icon">
+</head>
+<body>
+    <h1>SELEÇÃO DE DORIVAL JUNIOR</h1>
+    <h2>AULA DE HOJE: AULAS DINÂMICAS</h2>
+
+    <h4>Exemplo de uma imagem usando o "picture", onde definimos todos os atributos da imagem dentro dele: </h4>
+    <picture>
+        <img src="../Aula3/Imagens/flamengo-logo-escudo-novo.png" alt="Flamengo"
+        width="150">
+    </picture>
+
+    <h4>Novos atributos:</h4>
+    <p>link:favicon para definir a imagem logo da pagina</p>
+    <ul type="disk">
+        <li>type: Definir que tipo de imagem usamos ex: .png, .jpeg</li>
+        <li>srcset: Vai configurar qual imagem será carregada a partir do tamanho da imagem</li>
+        <li>media: Vai indicar o tamanho maximo a ser considerado para carregar a imagem indicada pelo "srcset"</li>
+    </ul>
+
+    <h4>Imagem dinamica:</h4>
+    <picture>
+        <source media="(max-width: 400px )" srcset="./Imagens/img_praia-cel.png" type="image/jpg">
+        <source media="(max-width: 800px )" srcset="./Imagens/img_praia-tablet.png" type="image/jpg">
+        <source media="(max-width: 1500px )" srcset="./Imagens/img_praia-pc.webp" type="image/jpg">
+        <img src="./Imagens/img_praia-g.webp" alt="Imagem grande">
+    </picture>
+<!-- comando C para criar comentário -->
+<!-- CÓDIGO COM ERRO, PERGUNTAR PROFESSOR SOLUÇÃO -->
+</body>
+</html>
