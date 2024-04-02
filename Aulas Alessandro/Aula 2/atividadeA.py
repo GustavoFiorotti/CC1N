@@ -8,4 +8,4 @@ C = float(input("Insira o valor de C: "))
 
 print()
     
-print (f"O valor da Hipotenusa é {math.sqrt ((B ** 2) + (C ** 2))  }.")
+print (f"O valor da Hipotenusa é {math.sqrt ((B ** 2) + (C ** 2)):.2f}.")
