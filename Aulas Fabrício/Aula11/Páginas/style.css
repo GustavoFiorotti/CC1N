@@ -1,0 +1,17 @@
+/* definindo regras */
+@charset "UTF-8";
+@font-face {
+    font-family: Myriad Pro;
+    src: url(../Fontes/myriadPro/);
+}
+/* Definindo estilo */
+
+body {
+    font-family: "Myriad Pro", Helvetica, sans-serif;
+    background-color: black;
+    color: aliceblue;
+}
+
+h5 {
+    font-family: Arial;
+}

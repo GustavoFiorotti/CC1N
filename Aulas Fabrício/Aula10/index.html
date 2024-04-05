@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula10</title>
+</head>
+<body>
+        <h1>VOCÊ PENSA QUE O FLAMENGO É TIME?</h1>
+        <h2>Aula de hoje: Som e vídeo</h2>
+        <h3>Áudio: </h3>
+        <p><strong> Atributos de vídeo</strong>:
+            <ul type="square">
+                <li>preload: oq será carregado previamente</li>
+                <ul type="cicle">
+                    <li>auto: carrega o arquivo todo quando abre página</li>
+                    <li>metadata: carrega informações sobre o arquivo quando abre a pg(tamanho, tempo)</li>
+                    <li>none: não carrega nada até o player ser tocado</li> 
+                </ul>
+                <li>controls: apresenta o player na tela</li>
+                <li>autoplay: toca o arquivo automaticamente quando abre a página</li>
+                <LI>loop: irá repetir infinitamente quando a reprodução terminar</LI>
+            </ol>
+        <br>
+        <audio preload="auto" controls loop > 
+            <source src="Arquivos/audio.mp3" alt="Hino do Flamengo" type="audio/mp3">
+        </audio>
+        <!-- Para criar linha, usar comando hr. Seus atributos são: align(Define a regra de alinhamento na página. Se nenhum valor for especificado, o valor padrão é left.)
+        color(Define a cor), noshade(Define que não tenha sombreamento), size(altura da linha), width(comprimento da linha)-->
+<hr color="black" size="2">
+        <h3>Vídeo:</h3>
+        <p>O vídeo pode tanto ser baixado do meu arquivo local, quanto ser incorporado do youtube.</p>
+        <p><strong>Atributos de vídeo:</strong></p>
+        <ul type="square">
+            <li>width: largura do vídeo</li>
+            <li>poster: configura a imagem que aparecerá na tela enquanto o usuário não clica no vídeo</li>
+            <li>controls: apresenta o player na tela</li>
+            <li>autoplay: toca o arquivo automaticamente quando abre a página</li>
+        </ul>
+        <br>
+        <video width="500" poster="Arquivos/nicolas-de-la-cruz-flamengo-e1703600273276.webp" controls>
+            <source src="Arquivos/video.mp4" type="video/mp4">
+        </video>
+        <br>
+        <iframe width="500" height="315" src="https://www.youtube.com/embed/Sx86-18V3m8?si=yeqRa-Cix6CnyW2B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<hr color="black" size="2">
+    <h5>Gustavo Fiorotti - CC1N 2024</h5>
+</body>
+</html>
