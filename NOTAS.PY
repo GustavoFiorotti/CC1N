@@ -3,16 +3,15 @@ print("Código para calcular a média do semestre.")
 print()
 
 while True:
-    b1 = float(input("Escreva a nota da primeira prova: "))
+    b1 = float(input("Escreva a nota do primeiro bimestre: "))
     
-    b2 = float(input("Escreva a nota da segunda prova: "))
+    b2 = float(input("Escreva a nota do segundo bimestre: "))
     if b1 > 10 or b2 > 10:
-        print(f"ERRO, você inseriu uma nota maior que da prova.")
+        print(f"ERRO, você inseriu uma nota maior que o possível.")
         continue
     break
-trab = float(input("Escreva as notas dos trabalhos DE TODO O SEMESTRE: "))
 
-sem = (b1 + b2 + trab) / 2
+sem = (b1 + b2) / 2
 
 if sem >= 7:
     print(f"Você PASSOU com uma média de {sem}.")
