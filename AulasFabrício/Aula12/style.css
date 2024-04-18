@@ -19,15 +19,17 @@ main {
     transform: translate(-50%,-50%);
     border-radius: 15px;
     padding: 20px;
-    padding-top:0%;
     box-shadow: 5px 5px 40px black;
 }
 
 h1 {
     color: white;
     text-align: center;
-    text-shadow: 2px 2px 15px black;
+    text-shadow: 3px 5px 25px black,
+                -3px -5px 25px black;
+
 }
+
 
 h2 {
     text-align: center;
@@ -43,10 +45,31 @@ h3{
 }
 
 button {
-    position:absolute;
-    bottom:10%;
+    bottom:15%;
     left: 50%;
+    border-radius: 50px;
+    color: white;
+    font-size: 15px;
+    position:absolute;
     transform: translate(-50%,-50%);
-    width: 100px;
-    
+    width: 140px;
+    text-align: center;
+    padding: 10px;
+    background-image: linear-gradient(90deg, #CF77F3 0%, #009BFF 47%, #2AC9DB 100%);
+    border: none;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    letter-spacing: 1.5px;
+}
+
+button::before {
+    content: "";
+    position: inherit; 
+    inset: -5px;
+    background: inherit;
+    filter: blur(10px);
+    border-radius: inherit;
+    transform: translate3d(1px,1px,-1px);
+
+
 }
