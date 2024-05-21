@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="https://use.typekit.net/jpt3kjx.css" />
+    <style>
+      .container {
+        background-color: gray;
+        height: 400px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+
+      .item{
+        background-color: darkgreen;
+        color: white;
+        padding: 20px;
+        margin: 5px;
+        border-radius: 5px;
+        width: 55px;
+      }
+      .a1{
+        background-color: yellowgreen;
+        
+        
+      }
+
+      .containerdiv{
+        margin: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+        align-content: center;
+      }
+      .div1{
+        background-color:rgb(94, 211, 94);
+        border-radius: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>SPxFLU</h1>
+    <h2>Aula de hoje: Flexbox</h2>
+
+    <section class="container">
+      <article class="item a1">Artigo 1</article>
+
+      <article class="item a2">Artigo 2</article>
+
+      <article class="item a3">Artigo 3</article>
+      
+      <article class="item a4">Artigo 4</article>
+      
+      <article class="item a5">Artigo 5</article>
+    </section>
+
+    <section class="containerdiv">
+
+      <div class="item div1">
+        div
+      </div>
+
+    </section>
+  </body>
+</html>

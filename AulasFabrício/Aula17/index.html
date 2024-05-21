@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+<style>
+    div{
+        display:flex;
+        justify-content: center;
+    }
+
+    section{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 240px;
+    }
+
+
+</style>
+</head>
+<body>
+    <div><h1>Formulário de Contato</h1></div>
+
+    <section>
+        <form action="mailto:gustavo.fiorotti8@hotmail.com" method="post">
+            <span>Nome: </span>
+            <input type="text" id="nome" required placeholder="Nome do visitante">
+            <br>
+            <span>E-mail: </span>
+            <input type="email" required>
+            <br>
+            <span>Data de Nascimento: </span>
+            <input type="date">
+            <br>
+            <span>Visita ao Site: </span>
+            <input type="datetime-local">
+            <br>
+            <span>Senha: </span>
+            <input type="password">
+            <br>
+            <span>Contato: </span>
+            <input type="radio" name="contato" id="sim" value="Sim" Sim>
+            <input type="radio" name="contato id="nao" value="Não" Não>
+            <br>
+            <span>Assunto: </span>
+            <input type="checkbox" name="auto" id="auto"> Automóvel
+            <input type="checkbox" name="auto" id="negocio"> Negócios
+            <input type="checkbox" name="auto" id="financa"> Finanças
+            <input type="checkbox" name="auto" id="tecnologia"> Tecnologia
+            <input type="checkbox" name="auto" id="esporte"> Esporte
+            <br>
+            <span>Local: </span>
+            <select name="Local id="local" size="1">
+
+
+                
+            </select>
+
+        </form>
+    </section>
+</body>
+</html>

@@ -1,75 +1,76 @@
 @charset "UTF-8";
 @font-face {
-    font-family: MyriadPro-regular;
-    src: url(../Aula11/Fontes/myriadPro/MYRIADPRO-REGULAR.OTF);
+  font-family: MyriadPro-regular;
+  src: url(../Aula11/Fontes/myriadPro/MYRIADPRO-REGULAR.OTF);
 }
 
 body {
-    font-family: "MyriadPro-regular";
-    background-image: linear-gradient(90deg,#0964A4,#1EA1E7,#2DB1BF);
+  font-family: "MyriadPro-regular";
+  background-image: linear-gradient(90deg, #0964a4, #1ea1e7, #2db1bf);
 }
 
 main {
-    width: 500px;
-    background-color: white;
-    /* margin: auto; para centralizar */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    border-radius: 15px;
-    padding: 20px;
-    box-shadow: 5px 5px 40px black;
+  width: 500px;
+  background-color: white;
+  /* margin: auto; para centralizar */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 5px 5px 40px black;
 }
 
 h1 {
-    color: white;
-    text-align: center;
-    text-shadow: 3px 5px 25px black,
-                -3px -5px 25px black;
-
+  color: white;
+  text-align: center;
+  text-shadow: 3px 5px 25px black, -3px -5px 25px black;
 }
-
 
 h2 {
-    text-align: center;
-    /* GRADIENTE NO TEXTO */
-    background: linear-gradient(90deg,#2DB1BF,#0964A4);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+  text-align: center;
+  /* GRADIENTE NO TEXTO */
+  background: linear-gradient(90deg, #2db1bf, #0964a4);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-h3{
-    color:rgb(9, 92, 92);
-    font-weight:bolder;
+h3 {
+  color: rgb(9, 92, 92);
+  font-weight: bolder;
 }
 
 button {
-    bottom:15%;
-    left: 50%;
-    border-radius: 50px;
-    color: white;
-    font-size: 15px;
-    position:absolute;
-    transform: translate(-50%,-50%);
-    width: 140px;
-    text-align: center;
-    padding: 10px;
-    background-image: linear-gradient(90deg, #CF77F3 0%, #009BFF 47%, #2AC9DB 100%);
-    border: none;
-    transform-style: preserve-3d;
-    cursor: pointer;
-    letter-spacing: 1.5px;
+  bottom: 5%;
+  left: 50%;
+  border-radius: 50px;
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 140px;
+  text-align: center;
+  padding: 10px;
+  background-image: linear-gradient(
+    90deg,
+    #cf77f3 0%,
+    #009bff 47%,
+    #2ac9db 100%
+  );
+  border: none;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  letter-spacing: 1.5px;
 }
 
 button::before {
-    content: "";
-    position: inherit; 
-    inset: -5px;
-    background: inherit;
-    filter: blur(10px);
-    border-radius: inherit;
-    transform: translate3d(1px,1px,-1px);
-
-
+  content: "";
+  position: inherit;
+  inset: -5px;
+  background: inherit;
+  filter: blur(10px);
+  border-radius: inherit;
+  transform: translate3d(1px, 1px, -1px);
+  
 }

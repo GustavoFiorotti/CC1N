@@ -16,7 +16,7 @@ sem = (b1 + b2) / 2
 if sem >= 7:
     print(f"Você PASSOU com uma média de {sem}.")
 
-elif sem <3:
+elif sem < 3:
     print(f"Sua nota foi {sem}, por ser menor que 3 você está REPROVADO.")
 
 elif 3 <= sem < 7:
