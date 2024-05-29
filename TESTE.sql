@@ -46,4 +46,4 @@ data_nascimento date not null,
 endereco varchar(200) not null,
 telefone varchar(20) not null,
 
-);
+)
