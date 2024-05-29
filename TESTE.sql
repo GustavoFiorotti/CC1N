@@ -1,4 +1,4 @@
-Aula 1 gustavo modelo físico teste
+-- Aula 1 gustavo modelo físico teste
 
 -- 1 Criar o banco de dados
 create schema if not exists Ex_SQL1;
