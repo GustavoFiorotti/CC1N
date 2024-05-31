@@ -4,17 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flexbox</title>
-    <link rel="stylesheet" href="https://use.typekit.net/jpt3kjx.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/xij7kdf.css" />
     <style>
+      body {
+        background-color: azure;
+        font-family: "myriad-pro";
+      }
       .container {
         background-color: gray;
         height: 400px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        border-radius: 5px;
       }
 
-      .item{
+      .item {
         background-color: darkgreen;
         color: white;
         padding: 20px;
@@ -22,13 +27,11 @@
         border-radius: 5px;
         width: 55px;
       }
-      .a1{
+      .a1 {
         background-color: yellowgreen;
-        
-        
       }
 
-      .containerdiv{
+      .containerdiv {
         margin: 10px;
         display: flex;
         align-items: center;
@@ -36,9 +39,15 @@
         flex-wrap: nowrap;
         align-content: center;
       }
-      .div1{
-        background-color:rgb(94, 211, 94);
+      .div1 {
+        background-color: rgb(94, 211, 94);
         border-radius: 50px;
+        height: 50px;
+        width: 100px;
+        text-align: center;
+        color: white;
+        margin: 20px;
+        padding: 10px;
       }
     </style>
   </head>
@@ -52,18 +61,17 @@
       <article class="item a2">Artigo 2</article>
 
       <article class="item a3">Artigo 3</article>
-      
+
       <article class="item a4">Artigo 4</article>
-      
+
       <article class="item a5">Artigo 5</article>
     </section>
 
     <section class="containerdiv">
-
-      <div class="item div1">
-        div
-      </div>
-
+      <div class="div1">Div redonda e separada</div>
     </section>
+
+    <hr color="black" size="2" />
+    <h5>Gustavo Fiorotti - CC1N 2024</h5>
   </body>
 </html>

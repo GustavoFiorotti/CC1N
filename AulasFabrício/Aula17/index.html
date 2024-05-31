@@ -1,65 +1,151 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulário</title>
-<style>
-    div{
-        display:flex;
-        justify-content: center;
-    }
+    <link rel="stylesheet" href="https://use.typekit.net/xij7kdf.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/formulario.css" />
+  </head>
+  <body>
+    <header>
+      <div class="limita-secao">
+        <img
+          src="../Aula18/Imagens/prefeitura-de-sao-luis-logo.png"
+          alt="logo"
+        />
 
-    section{
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        width: 240px;
-    }
+        <nav>
+          <a href="../Aula18/index.html">Home</a>
+        </nav>
+      </div>
+    </header>
 
+    <main>
+      <section class="secao-capa">
+        <div>
+          <h1>São Luis do Maranhão</h1>
+          <h2>Visite</h2>
+        </div>
+      </section>
 
-</style>
-</head>
-<body>
-    <div><h1>Formulário de Contato</h1></div>
+      <section class="contato">
+        <form
+          class="formulario"
+          action="mailto:gustavo.fiorotti8@hotmail.com"
+          method="post"
+        >
+          <h2>Formulário para Contato</h2>
 
-    <section>
-        <form action="mailto:gustavo.fiorotti8@hotmail.com" method="post">
+          <div class="field">
             <span>Nome: </span>
-            <input type="text" id="nome" required placeholder="Nome do visitante">
-            <br>
+            <input
+              type="text"
+              id="nome-usario01"
+              required
+              placeholder="Nome do visitante"
+              name="nome-usuario"
+              maxlength="30"
+              value=""
+              size="40"
+            />
+          </div>
+
+          <div class="field">
             <span>E-mail: </span>
-            <input type="email" required>
-            <br>
-            <span>Data de Nascimento: </span>
-            <input type="date">
-            <br>
-            <span>Visita ao Site: </span>
-            <input type="datetime-local">
-            <br>
+            <input name="email" type="email" id="email" required />
+          </div>
+
+          <div class="field">
             <span>Senha: </span>
-            <input type="password">
-            <br>
-            <span>Contato: </span>
-            <input type="radio" name="contato" id="sim" value="Sim" Sim>
-            <input type="radio" name="contato id="nao" value="Não" Não>
-            <br>
-            <span>Assunto: </span>
-            <input type="checkbox" name="auto" id="auto"> Automóvel
-            <input type="checkbox" name="auto" id="negocio"> Negócios
-            <input type="checkbox" name="auto" id="financa"> Finanças
-            <input type="checkbox" name="auto" id="tecnologia"> Tecnologia
-            <input type="checkbox" name="auto" id="esporte"> Esporte
-            <br>
+            <input required name="senha" id="senha" type="password" />
+          </div>
+
+          <div class="field">
+            <span
+              >Tel:
+              <input
+                type="tel"
+                id="tel"
+                name="Tel"
+                placeholder="(XX) XXXX-XXXX"
+              />
+            </span>
+            <div class="field">
+              <span> Melhor horário para contato:</span>
+              <span
+                >Das:
+                <input type="time" name="start_time" id="time"/>
+                as:
+                <input type="time" name="end_time" id="time"/>
+              </span>
+            </div>
+          </div>
+
+          <div class="field">
+            <span>Data de Nascimento: </span>
+            <input type="date" required />
+          </div>
+
+          <div class="field radiobox">
+            <span>Gostaria de receber novidades?: </span>
+            <input type="radio" name="opcao1" value="sim" /> Sim
+            <input type="radio" name="opcao2" value="nao" /> Não
+          </div>
+
+          <div class="field">
             <span>Local: </span>
-            <select name="Local id="local" size="1">
-
-
-                
+            <select required name="Local" size="1">
+              <optgroup label="Selecione">
+                <option value="cariacica">Cariacica</option>
+                <option value="vitoria">Vitória</option>
+                <option value="vilavelha">Vila Velha</option>
+                <option value="serra">Serra</option>
+              </optgroup>
             </select>
+          </div>
+
+          <div class="field">
+            <span
+              >Assunto:
+              <div class="check">
+                <input type="checkbox" name="auto" id="auto" /> Automóvel
+                <input type="checkbox" name="negocios" id="negocio" /> Negócios
+                <input type="checkbox" name="financas" id="financa" /> Finanças
+                <input type="checkbox" name="tecnologia" id="tecnologia" />
+                Tecnologia
+                <input type="checkbox" name="esportes" id="esportes" /> Esporte
+              </div>
+            </span>
+          </div>
+
+          <div>
+            <span>Comentários:</span>
+            <textarea
+              name="comentario"
+              id="comentario"
+              cols="50"
+              rows="10"
+              placeholder="Escreva aqui algum comentário"
+            ></textarea>
+          </div>
+
+          <div class="button">
+            <input type="submit" value="Enviar email" />
+            <input type="reset" value="Limpar" />
+            <input type="button" value="Voltar">
+          </div>
 
         </form>
-    </section>
-</body>
+      </section>
+    </main>
+
+    <footer>
+      <div class="limita-secao">
+        Copyright 2024© - Prefeitura de São Luis™
+      </div>
+    </footer>
+
+  </body>
 </html>

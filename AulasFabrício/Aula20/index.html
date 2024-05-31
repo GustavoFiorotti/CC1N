@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://use.typekit.net/xij7kdf.css" />
+    <style>
+        body{
+            font-family: "myriad-pro";
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .mensagem-correta {
+            color: blue;
+        }
+        
+        .mensagem-incorreta {
+            color: red;
+        }
+        div{
+            transform: scale(150%);
+            width: 250px;
+            padding: 20px;
+            margin: 20px ;
+            background-color:white;
+            border-radius: 5px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        input{
+            width: 97%;
+            height: 20px ;
+            margin: 5px 0;
+            padding: 0 0 0 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            
+        }
+
+        section{
+            display: flex;
+            justify-content:space-evenly;
+            margin-top: 20px;
+        }
+        button{
+            width: 40%;
+            padding: 2px;
+            border: none;
+            border-radius: 3px;
+            color: white;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        button.login{
+            background-color: #1877f2;
+        }
+
+        button.voltar{
+            background-color: #cc0000;
+        }
+    </style>
+</head>
+<body>
+                <div>
+                    <h2>Entre com sua conta</h2>
+                    <span>Email: </span>
+                    <input type="email" name="Email" id="email" placeholder="elonmusk@msn.com" required>
+                    <br>
+                    <span>Senha: </span>
+                    <input type="Senha" name="Senha" id="senha" placeholder="euodeioofacebook" required>
+                    <br>
+                    <section>
+                        <button class="login" type="button" onclick="validarUsuario()">Login</button>
+                        <button class="voltar" type="button" onclick="voltar()">Voltar</button>
+                    </section>
+                    <br>
+                    <p id="resposta"></p>
+                </div>
+
+    <script>
+        const adm = "elonmusk@msn.com"
+        const senhaCorreta = "euodeioofacebook"
+
+        function validarUsuario(){
+            var email = document.getElementById("email").value
+            var senha = document.getElementById("senha").value
+
+            if (email == adm && senha == senhaCorreta ){           
+            document.getElementById("resposta").innerHTML = "Logado!"
+            document.getElementById("resposta").classList.remove("mensagem-incorreta")
+            document.getElementById("resposta").classList.add("mensagem-correta")
+            }
+
+            else {
+            document.getElementById("resposta").innerHTML = "ERRO!!!"
+            document.getElementById("resposta").classList.add("mensagem-incorreta");
+            }
+        }
+        
+        function voltar(){
+            window.location.href = "../Aula18/index.html"
+        }
+    </script>
+</body>
+</html>

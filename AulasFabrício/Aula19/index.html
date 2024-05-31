@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.typekit.net/xij7kdf.css" />
+    <style>
+      body {
+        font-family: "myriad-pro";
+      }
+    </style>
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <h1>FLAMENGO PASSOU DO AMAZONAS NA CDB</h1>
+
+    <script>
+      document.writeln("Olá Mundo!");
+    </script>
+
+    <h2>JavaScript</h2>
+    <hr />
+
+    <div id="resposta"></div>
+    <script>
+      document.writeln("Olá Mundo! Segunda mensagem.");
+      //   window.alert("Alerta do meu Olá Mundo!")
+      document.getElementById("resposta").innerHTML =
+        "Olá mundo usando <strong>getElementById</strong>";
+      // Entrada
+      //   var botaoresposta = window.confirm("Você está gostando de javascript?")
+      //   document.writln(botaoresposta)
+    </script>
+
+    <hr />
+
+    <h2>Exemplo:</h2>
+
+    <input id="usuario" />
+    <button onclick="enviaResposta()">Login</button>
+
+    <script type="text/JavaScript">
+      function enviaResposta() {
+        var nomeUsuario = document.getElementById("usuario").value.toLowerCase();
+        // toLowerCase transforma qualquer mensagem digitada para minusculo, aceitando tanto "Administrador", quanto "administrador"
+        if (nomeUsuario == "administrador") {
+          window.alert("É um administrador");
+        } else {
+          window.alert("Não é um administrador, tente novamente.");
+        }
+      }
+    </script>
+    <hr />
+    <h2>Atividade:</h2>
+    <p><a href="./calculadora.html">Calculadora de idade</a></p>
+    
+    <hr color="black" size="2" />
+    <h5>Gustavo Fiorotti - CC1N 2024</h5>
+  </body>
+</html>

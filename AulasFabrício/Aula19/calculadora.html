@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de idade</title>
+    <link rel="stylesheet" href="https://use.typekit.net/xij7kdf.css" />
+    <style>
+      body {
+        font-family: "myriad-pro";
+        background-color: azure;
+      }
+      h1 {
+        text-align: center;
+      }
+      section{
+        display: flex;
+        justify-content: center;
+      }
+      div{
+        text-align: center;
+        justify-content: center;
+        padding: 5px;
+      }
+      span{
+        font-size: 1.2em;
+        font-weight:600;
+        width: 21%;
+    }
+    
+    </style>
+  </head>
+  <body>
+    <h1>Calcule sua idade</h1>
+
+    <section>
+      <div>
+        <span>Insira sua data de nascimento: </span>
+      
+        <br>
+      
+        <input required id="idade" />
+        <button onclick="enviaResposta()">Calcular</button>
+      
+        <br>
+        <p id="resultado"></p>
+        </div>
+    </section>
+  
+  <script>
+      function enviaResposta() {
+          var ano = document.getElementById("idade").value;
+          var idade = new Date().getFullYear() - ano;
+          document.getElementById("resultado").innerHTML = "Sua idade é " + idade + " anos.";
+      }
+  </script>
+  
+  </body>
+</html>

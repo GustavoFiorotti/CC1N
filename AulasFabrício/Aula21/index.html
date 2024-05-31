@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora de idade</title>
+  <link rel="stylesheet" href="https://use.typekit.net/xij7kdf.css" />
+  <style>
+    body {
+      font-family: "myriad-pro";
+      background-color: #f0f2f5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    main {
+      width: 500px;
+      height: 250px;
+      text-align: center;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+      transform: scale(130%);
+    }
+
+    .form {
+      display: flex;
+      justify-content: space-around;
+      padding-top: 15%;
+    }
+
+    input,
+    select {
+      width: 20%;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    button {
+      border: none;
+      margin-top: 25px;
+      padding: 5px 20px 5px 20px;
+      border-radius: 5px;
+      background-color: #1877f2;
+      color: white;
+    }
+
+    span {
+      font-weight: 600;
+    }
+
+    .mensagem-correta {
+      color: blue;
+    }
+
+    .mensagem-incorreta {
+      color: red;
+    }
+
+    .divh1 {
+      position: absolute;
+      bottom: 85%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="divh1">
+    <h1 class="titulo">Calcule sua idade</h1>
+  </div>
+
+  <main>
+    <span>Insira sua data de nascimento: </span>
+    <div class="form">
+      <label for="dia">Dia: </label>
+      <input type="number" id="dia" min="1" max="31">
+
+      <label for="mes">Mês: </label>
+      <select id="mes">
+        <option value="0">Janeiro</option>
+        <option value="1">Fevereiro</option>
+        <option value="2">Março</option>
+        <option value="3">Abril</option>
+        <option value="4">Maio</option>
+        <option value="5">Junho</option>
+        <option value="6">Julho</option>
+        <option value="7">Agosto</option>
+        <option value="8">Setembro</option>
+        <option value="9">Outubro</option>
+        <option value="10">Novembro</option>
+        <option value="11">Dezembro</option>
+      </select>
+      <label for="ano">Ano: </label>
+      <input type="number" id="ano" min="1900" max="2024">
+    </div>
+
+    <div class="button"><button onclick="enviaResposta()">Calcular</button></div>
+    <br>
+    <p id="resultado"></p>
+  </main>
+
+  <script>
+    function enviaResposta() {
+      var dia = document.getElementById("dia").value;
+      var mes = document.getElementById("mes").value;
+      var ano = document.getElementById("ano").value;
+
+      if (!dia || !mes || !ano) {
+        document.getElementById("resultado").textContent = "Preencha todas as informações!"
+        document.getElementById("resultado").classList.add("mensagem-incorreta")
+        return
+      }
+
+      var dataNascimento = new Date(ano, mes - 1, dia)
+      var hoje = new Date()
+
+      var idade = hoje.getFullYear() - dataNascimento.getFullYear()
+      var mesAtual = hoje.getMonth() - dataNascimento.getMonth()
+
+      if (mesAtual < 0 || (mesAtual === 0 && hoje.getDate() < dataNascimento.getDate())) {
+        idade--
+      }
+
+
+      document.getElementById("resultado").textContent = "Você tem " + idade + " anos."
+      document.getElementById("resultado").classList.remove("mensagem-incorreta")
+      document.getElementById("resultado").classList.add("mensagem-correta")
+    }
+  </script>
+
+</body>
+</html>
